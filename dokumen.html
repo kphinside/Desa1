@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f5132">
+  <meta name="description" content="Daftar dokumen resmi Pemerintah Desa Sukamaju yang dapat diunduh berdasarkan kategori.">
+  <meta name="keywords" content="desa, pemerintah desa, sukamaju, ppid, jdih, berita desa, layanan publik">
+  <meta name="author" content="Pemerintah Desa Sukamaju">
+  <meta property="og:title" content="Download Dokumen — Desa Sukamaju">
+  <meta property="og:description" content="Daftar dokumen resmi Pemerintah Desa Sukamaju yang dapat diunduh berdasarkan kategori.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Download Dokumen — Desa Sukamaju</title>
+</head>
+<body>
+
+<!-- Topbar pemerintahan -->
+<div class="topbar">
+  <div class="container">
+    <span>📞 (021) 1234-5678 &nbsp;|&nbsp; ✉ info@desa-sukamaju.id</span>
+    <span>Jam Pelayanan: Senin–Jumat, 08.00–15.00 WIB</span>
+  </div>
+</div>
+
+<!-- Navbar utama -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="../index.html" class="brand" aria-label="Beranda">
+      <div class="brand-logo">D</div>
+      <div class="brand-text">
+        <strong>Desa Sukamaju</strong>
+        <span>Kecamatan Sejahtera, Kabupaten Makmur</span>
+      </div>
+    </a>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../index.html" class="">Beranda</a></li>
+        <li><a href="../pages/profil.html" class="">Profil</a></li>
+        <li><a href="../pages/berita.html" class="">Berita</a></li>
+        <li><a href="../pages/galeri.html" class="">Galeri</a></li>
+        <li><a href="../pages/dokumen.html" class="active">Dokumen</a></li>
+        <li><a href="../pages/ppid.html" class="">PPID</a></li>
+        <li><a href="../pages/jdih.html" class="">JDIH</a></li>
+        <li><a href="../pages/struktur.html" class="">Struktur</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Ubah tema">☾</button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Buka menu">☰</button>
+    </div>
+  </div>
+</header>
+
+
+<section class="page-header">
+  <div class="container">
+    <h1>Download Dokumen</h1>
+    <p>Dokumen resmi Pemerintah Desa yang dapat diunduh</p>
+    <div class="breadcrumb"><a href="../index.html">Beranda</a> / Dokumen</div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="filter-bar">
+      <input class="filter-input" id="docSearch" type="search" placeholder="🔍 Cari nama dokumen...">
+      <select class="filter-input" id="docKategori" style="max-width:220px;">
+        <option value="all">Semua Kategori</option>
+        <option>Anggaran</option>
+        <option>Perencanaan</option>
+        <option>Formulir</option>
+        <option>Profil</option>
+        <option>Laporan</option>
+      </select>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>#</th><th>Nama Dokumen</th><th>Kategori</th><th>Tipe</th><th>Ukuran</th><th>Tanggal</th><th>Aksi</th></tr></thead>
+        <tbody id="docTbody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:1rem;">
+          <div class="brand-logo">D</div>
+          <div class="brand-text"><strong>Desa Sukamaju</strong><span>Kec. Sejahtera, Kab. Makmur</span></div>
+        </div>
+        <p style="font-size:.88rem;line-height:1.6;">Website resmi Pemerintah Desa Sukamaju, sumber informasi dan layanan publik bagi warga desa.</p>
+      </div>
+      <div>
+        <h4>Tautan Cepat</h4>
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="../pages/profil.html">Profil</a></li>
+          <li><a href="../pages/berita.html">Berita</a></li>
+          <li><a href="../pages/galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="../pages/dokumen.html">Download Dokumen</a></li>
+          <li><a href="../pages/ppid.html">PPID</a></li>
+          <li><a href="../pages/jdih.html">JDIH</a></li>
+          <li><a href="../pages/struktur.html">Struktur Organisasi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li>📍 Jl. Raya Desa No. 1</li>
+          <li>📞 (021) 1234-5678</li>
+          <li>✉ info@desa-sukamaju.id</li>
+          <li>🕒 Senin–Jumat, 08.00–15.00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Pemerintah Desa Sukamaju. Template open-source. Dibuat dengan HTML, CSS &amp; JavaScript murni.
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+<script src="../js/main.js"></script>
+<script src="../js/data.js"></script><script src="../js/render.js"></script><script>renderDokumen("docTbody","docSearch","docKategori");</script>
+</body>
+</html>
